@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,11 +18,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Picture" id="4L7-hy-hg5">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Picture" id="4L7-hy-hg5">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4L7-hy-hg5" id="3ub-g5-NWD">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -47,18 +46,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ysV-Fx-Hy9">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ysV-Fx-Hy9">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="ysV-Fx-Hy9" firstAttribute="leading" secondItem="Sum-LY-jRE" secondAttribute="leading" id="6iy-KP-wHH"/>
-                            <constraint firstItem="ysV-Fx-Hy9" firstAttribute="bottom" secondItem="msa-tN-qIF" secondAttribute="bottom" id="Dg4-OQ-eeU"/>
+                            <constraint firstItem="ysV-Fx-Hy9" firstAttribute="bottom" secondItem="Sum-LY-jRE" secondAttribute="bottom" id="Dg4-OQ-eeU"/>
                             <constraint firstAttribute="trailing" secondItem="ysV-Fx-Hy9" secondAttribute="trailing" id="Dsg-jN-Xhd"/>
                             <constraint firstItem="ysV-Fx-Hy9" firstAttribute="top" secondItem="Sum-LY-jRE" secondAttribute="top" id="ZoP-3X-bUZ"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="msa-tN-qIF"/>
                     </view>
                     <connections>
                         <outlet property="imageView" destination="ysV-Fx-Hy9" id="ffx-8N-Hqo"/>
