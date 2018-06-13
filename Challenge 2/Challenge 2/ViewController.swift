@@ -36,7 +36,7 @@ class ViewController: UITableViewController {
   
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: "Flag", for: indexPath)
-    cell.textLabel?.text = flags[indexPath.row].capitalized
+    cell.textLabel?.text = flags[indexPath.row].uppercased()
     cell.imageView?.image = UIImage(named: flags[indexPath.row])
     return cell
   }
