@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A01A2F0320D7F94C00791F7C /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = A01A2F0220D7F94C00791F7C /* start.txt */; };
 		A03082D120D7024D004FA6E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03082D020D7024D004FA6E8 /* AppDelegate.swift */; };
 		A03082D320D7024D004FA6E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03082D220D7024D004FA6E8 /* ViewController.swift */; };
 		A03082D620D7024D004FA6E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A03082D420D7024D004FA6E8 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A01A2F0220D7F94C00791F7C /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
 		A03082CD20D7024D004FA6E8 /* Project 5 Word Scramble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 5 Word Scramble.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A03082D020D7024D004FA6E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A03082D220D7024D004FA6E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				A03082D720D7024E004FA6E8 /* Assets.xcassets */,
 				A03082D920D7024E004FA6E8 /* LaunchScreen.storyboard */,
 				A03082DC20D7024E004FA6E8 /* Info.plist */,
+				A01A2F0220D7F94C00791F7C /* start.txt */,
 			);
 			path = "Project 5 Word Scramble";
 			sourceTree = "<group>";
@@ -123,6 +126,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A03082DB20D7024E004FA6E8 /* LaunchScreen.storyboard in Resources */,
+				A01A2F0320D7F94C00791F7C /* start.txt in Resources */,
 				A03082D820D7024E004FA6E8 /* Assets.xcassets in Resources */,
 				A03082D620D7024D004FA6E8 /* Main.storyboard in Resources */,
 			);
