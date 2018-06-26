@@ -24,18 +24,19 @@ class ViewController: UITableViewController {
       urlString = "https://api.whitehouse.gov/v1/petitions.json?signatureCountFloor=10000&limit=100"
     }
     
-    if let url = URL(string: urlString) {
-      if let data = try? String(contentsOf: url) {
-        let json = JSON(parseJSON: data)
-        
-        if json["metadata"]["responseInfo"]["status"].intValue == 200 {
-          // we're OK to parse!
-          parse(json: json)
-          return
+    DispatchQueue.global(qos: .userInitiated).async { [unowned self] in
+      if let url = URL(string: urlString) {
+        if let data = try? String(contentsOf: url) {
+          let json = JSON(parseJSON: data)
+          
+          if json["metadata"]["responseInfo"]["status"].intValue == 200 {
+            // we're OK to parse!
+            self.parse(json: json)
+            return
+          }
         }
       }
     }
-    
     showError()
   }
   
