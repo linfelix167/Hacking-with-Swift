@@ -15,6 +15,10 @@ class ViewController: UITableViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    performSelector(inBackground: #selector(fetchJSON), with: nil)
+  }
+  
+  @objc func fetchJSON() {
     // String points to server
     let urlString: String
     
@@ -24,7 +28,6 @@ class ViewController: UITableViewController {
       urlString = "https://api.whitehouse.gov/v1/petitions.json?signatureCountFloor=10000&limit=100"
     }
     
-    DispatchQueue.global(qos: .userInitiated).async { [unowned self] in
       if let url = URL(string: urlString) {
         if let data = try? String(contentsOf: url) {
           let json = JSON(parseJSON: data)
@@ -36,8 +39,7 @@ class ViewController: UITableViewController {
           }
         }
       }
-    }
-    showError()
+    performSelector(onMainThread: #selector(showError), with: nil, waitUntilDone: false)
   }
   
   func parse(json: JSON) {
@@ -48,12 +50,10 @@ class ViewController: UITableViewController {
       let obj = ["title": title, "body": body, "sigs": sigs]
       petitions.append(obj)
     }
-    DispatchQueue.main.async { [unowned self] in
-      self.tableView.reloadData()
-    }
+    tableView.performSelector(onMainThread: #selector(UITableView.reloadData), with: nil, waitUntilDone: false)
   }
   
-  func showError() {
+  @objc func showError() {
     DispatchQueue.main.async { [unowned self] in
       let ac = UIAlertController(title: "Loading error", message: "There was a problem loading the feed; please check your connection and try again.", preferredStyle: .alert)
       
