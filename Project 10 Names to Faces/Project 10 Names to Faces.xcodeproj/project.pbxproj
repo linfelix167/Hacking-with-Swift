@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0997D6E20E5441600E93054 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0997D6D20E5441600E93054 /* Person.swift */; };
 		A0C0720420E3FBF800517ACF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C0720320E3FBF800517ACF /* AppDelegate.swift */; };
 		A0C0720620E3FBF800517ACF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C0720520E3FBF800517ACF /* ViewController.swift */; };
 		A0C0720920E3FBF800517ACF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0C0720720E3FBF800517ACF /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A0997D6D20E5441600E93054 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		A0C0720020E3FBF800517ACF /* Project 10 Names to Faces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 10 Names to Faces.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C0720320E3FBF800517ACF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0C0720520E3FBF800517ACF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				A0C0720320E3FBF800517ACF /* AppDelegate.swift */,
 				A0C0720520E3FBF800517ACF /* ViewController.swift */,
 				A0C0721520E4119400517ACF /* PersonCell.swift */,
+				A0997D6D20E5441600E93054 /* Person.swift */,
 				A0C0720720E3FBF800517ACF /* Main.storyboard */,
 				A0C0720A20E3FBF900517ACF /* Assets.xcassets */,
 				A0C0720C20E3FBF900517ACF /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				A0C0721620E4119400517ACF /* PersonCell.swift in Sources */,
 				A0C0720620E3FBF800517ACF /* ViewController.swift in Sources */,
+				A0997D6E20E5441600E93054 /* Person.swift in Sources */,
 				A0C0720420E3FBF800517ACF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
