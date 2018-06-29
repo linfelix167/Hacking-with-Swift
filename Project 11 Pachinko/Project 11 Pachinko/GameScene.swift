@@ -1,8 +1,8 @@
 //
 //  GameScene.swift
-//  Project 11: Pachinko
+//  Project 11 Pachinko
 //
-//  Created by Felix Lin on 6/28/18.
+//  Created by Felix Lin on 6/29/18.
 //  Copyright © 2018 Felix Lin. All rights reserved.
 //
 
@@ -18,7 +18,12 @@ class GameScene: SKScene {
     addChild(background)
   }
   
+  
   override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-    
+  }
+  
+  
+  override func update(_ currentTime: TimeInterval) {
+    // Called before each frame is rendered
   }
 }
