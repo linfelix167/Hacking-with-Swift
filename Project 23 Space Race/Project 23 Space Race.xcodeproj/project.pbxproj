@@ -1,0 +1,407 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A059A68F20FFBE5D00D0FA2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A059A68E20FFBE5D00D0FA2B /* AppDelegate.swift */; };
+		A059A69120FFBE5D00D0FA2B /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = A059A69020FFBE5D00D0FA2B /* GameScene.sks */; };
+		A059A69320FFBE5D00D0FA2B /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = A059A69220FFBE5D00D0FA2B /* Actions.sks */; };
+		A059A69520FFBE5D00D0FA2B /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A059A69420FFBE5D00D0FA2B /* GameScene.swift */; };
+		A059A69720FFBE5D00D0FA2B /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A059A69620FFBE5D00D0FA2B /* GameViewController.swift */; };
+		A059A69A20FFBE5D00D0FA2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A059A69820FFBE5D00D0FA2B /* Main.storyboard */; };
+		A059A69C20FFBE5E00D0FA2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A059A69B20FFBE5E00D0FA2B /* Assets.xcassets */; };
+		A059A69F20FFBE5E00D0FA2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A059A69D20FFBE5E00D0FA2B /* LaunchScreen.storyboard */; };
+		A059A6B320FFBE8600D0FA2B /* tv.png in Resources */ = {isa = PBXBuildFile; fileRef = A059A6A720FFBE8600D0FA2B /* tv.png */; };
+		A059A6B420FFBE8600D0FA2B /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = A059A6A820FFBE8600D0FA2B /* ball.png */; };
+		A059A6B520FFBE8600D0FA2B /* explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = A059A6A920FFBE8600D0FA2B /* explosion.sks */; };
+		A059A6B620FFBE8600D0FA2B /* tv@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A059A6AA20FFBE8600D0FA2B /* tv@2x.png */; };
+		A059A6B720FFBE8600D0FA2B /* bigSpark.png in Resources */ = {isa = PBXBuildFile; fileRef = A059A6AB20FFBE8600D0FA2B /* bigSpark.png */; };
+		A059A6B820FFBE8600D0FA2B /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = A059A6AC20FFBE8600D0FA2B /* spark.png */; };
+		A059A6B920FFBE8600D0FA2B /* player@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A059A6AD20FFBE8600D0FA2B /* player@2x.png */; };
+		A059A6BA20FFBE8600D0FA2B /* ball@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A059A6AE20FFBE8600D0FA2B /* ball@2x.png */; };
+		A059A6BB20FFBE8600D0FA2B /* hammer.png in Resources */ = {isa = PBXBuildFile; fileRef = A059A6AF20FFBE8600D0FA2B /* hammer.png */; };
+		A059A6BC20FFBE8600D0FA2B /* player.png in Resources */ = {isa = PBXBuildFile; fileRef = A059A6B020FFBE8600D0FA2B /* player.png */; };
+		A059A6BD20FFBE8600D0FA2B /* Starfield.sks in Resources */ = {isa = PBXBuildFile; fileRef = A059A6B120FFBE8600D0FA2B /* Starfield.sks */; };
+		A059A6BE20FFBE8600D0FA2B /* hammer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A059A6B220FFBE8600D0FA2B /* hammer@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A059A68B20FFBE5D00D0FA2B /* Project 23 Space Race.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 23 Space Race.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A059A68E20FFBE5D00D0FA2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A059A69020FFBE5D00D0FA2B /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		A059A69220FFBE5D00D0FA2B /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		A059A69420FFBE5D00D0FA2B /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		A059A69620FFBE5D00D0FA2B /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		A059A69920FFBE5D00D0FA2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A059A69B20FFBE5E00D0FA2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A059A69E20FFBE5E00D0FA2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A059A6A020FFBE5E00D0FA2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A059A6A720FFBE8600D0FA2B /* tv.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tv.png; sourceTree = "<group>"; };
+		A059A6A820FFBE8600D0FA2B /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball.png; sourceTree = "<group>"; };
+		A059A6A920FFBE8600D0FA2B /* explosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = explosion.sks; sourceTree = "<group>"; };
+		A059A6AA20FFBE8600D0FA2B /* tv@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tv@2x.png"; sourceTree = "<group>"; };
+		A059A6AB20FFBE8600D0FA2B /* bigSpark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bigSpark.png; sourceTree = "<group>"; };
+		A059A6AC20FFBE8600D0FA2B /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		A059A6AD20FFBE8600D0FA2B /* player@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player@2x.png"; sourceTree = "<group>"; };
+		A059A6AE20FFBE8600D0FA2B /* ball@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ball@2x.png"; sourceTree = "<group>"; };
+		A059A6AF20FFBE8600D0FA2B /* hammer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hammer.png; sourceTree = "<group>"; };
+		A059A6B020FFBE8600D0FA2B /* player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player.png; sourceTree = "<group>"; };
+		A059A6B120FFBE8600D0FA2B /* Starfield.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Starfield.sks; sourceTree = "<group>"; };
+		A059A6B220FFBE8600D0FA2B /* hammer@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hammer@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A059A68820FFBE5D00D0FA2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A059A68220FFBE5D00D0FA2B = {
+			isa = PBXGroup;
+			children = (
+				A059A68D20FFBE5D00D0FA2B /* Project 23 Space Race */,
+				A059A68C20FFBE5D00D0FA2B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A059A68C20FFBE5D00D0FA2B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A059A68B20FFBE5D00D0FA2B /* Project 23 Space Race.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A059A68D20FFBE5D00D0FA2B /* Project 23 Space Race */ = {
+			isa = PBXGroup;
+			children = (
+				A059A68E20FFBE5D00D0FA2B /* AppDelegate.swift */,
+				A059A69020FFBE5D00D0FA2B /* GameScene.sks */,
+				A059A69220FFBE5D00D0FA2B /* Actions.sks */,
+				A059A69420FFBE5D00D0FA2B /* GameScene.swift */,
+				A059A69620FFBE5D00D0FA2B /* GameViewController.swift */,
+				A059A69820FFBE5D00D0FA2B /* Main.storyboard */,
+				A059A69B20FFBE5E00D0FA2B /* Assets.xcassets */,
+				A059A69D20FFBE5E00D0FA2B /* LaunchScreen.storyboard */,
+				A059A6A020FFBE5E00D0FA2B /* Info.plist */,
+				A059A6A620FFBE8600D0FA2B /* Content */,
+			);
+			path = "Project 23 Space Race";
+			sourceTree = "<group>";
+		};
+		A059A6A620FFBE8600D0FA2B /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				A059A6A720FFBE8600D0FA2B /* tv.png */,
+				A059A6A820FFBE8600D0FA2B /* ball.png */,
+				A059A6A920FFBE8600D0FA2B /* explosion.sks */,
+				A059A6AA20FFBE8600D0FA2B /* tv@2x.png */,
+				A059A6AB20FFBE8600D0FA2B /* bigSpark.png */,
+				A059A6AC20FFBE8600D0FA2B /* spark.png */,
+				A059A6AD20FFBE8600D0FA2B /* player@2x.png */,
+				A059A6AE20FFBE8600D0FA2B /* ball@2x.png */,
+				A059A6AF20FFBE8600D0FA2B /* hammer.png */,
+				A059A6B020FFBE8600D0FA2B /* player.png */,
+				A059A6B120FFBE8600D0FA2B /* Starfield.sks */,
+				A059A6B220FFBE8600D0FA2B /* hammer@2x.png */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A059A68A20FFBE5D00D0FA2B /* Project 23 Space Race */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A059A6A320FFBE5E00D0FA2B /* Build configuration list for PBXNativeTarget "Project 23 Space Race" */;
+			buildPhases = (
+				A059A68720FFBE5D00D0FA2B /* Sources */,
+				A059A68820FFBE5D00D0FA2B /* Frameworks */,
+				A059A68920FFBE5D00D0FA2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Project 23 Space Race";
+			productName = "Project 23 Space Race";
+			productReference = A059A68B20FFBE5D00D0FA2B /* Project 23 Space Race.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A059A68320FFBE5D00D0FA2B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Felix Lin";
+				TargetAttributes = {
+					A059A68A20FFBE5D00D0FA2B = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = A059A68620FFBE5D00D0FA2B /* Build configuration list for PBXProject "Project 23 Space Race" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A059A68220FFBE5D00D0FA2B;
+			productRefGroup = A059A68C20FFBE5D00D0FA2B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A059A68A20FFBE5D00D0FA2B /* Project 23 Space Race */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A059A68920FFBE5D00D0FA2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A059A6B820FFBE8600D0FA2B /* spark.png in Resources */,
+				A059A69A20FFBE5D00D0FA2B /* Main.storyboard in Resources */,
+				A059A69120FFBE5D00D0FA2B /* GameScene.sks in Resources */,
+				A059A69C20FFBE5E00D0FA2B /* Assets.xcassets in Resources */,
+				A059A69F20FFBE5E00D0FA2B /* LaunchScreen.storyboard in Resources */,
+				A059A69320FFBE5D00D0FA2B /* Actions.sks in Resources */,
+				A059A6B520FFBE8600D0FA2B /* explosion.sks in Resources */,
+				A059A6BB20FFBE8600D0FA2B /* hammer.png in Resources */,
+				A059A6BA20FFBE8600D0FA2B /* ball@2x.png in Resources */,
+				A059A6B920FFBE8600D0FA2B /* player@2x.png in Resources */,
+				A059A6BD20FFBE8600D0FA2B /* Starfield.sks in Resources */,
+				A059A6B320FFBE8600D0FA2B /* tv.png in Resources */,
+				A059A6BE20FFBE8600D0FA2B /* hammer@2x.png in Resources */,
+				A059A6BC20FFBE8600D0FA2B /* player.png in Resources */,
+				A059A6B420FFBE8600D0FA2B /* ball.png in Resources */,
+				A059A6B720FFBE8600D0FA2B /* bigSpark.png in Resources */,
+				A059A6B620FFBE8600D0FA2B /* tv@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A059A68720FFBE5D00D0FA2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A059A69520FFBE5D00D0FA2B /* GameScene.swift in Sources */,
+				A059A69720FFBE5D00D0FA2B /* GameViewController.swift in Sources */,
+				A059A68F20FFBE5D00D0FA2B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A059A69820FFBE5D00D0FA2B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A059A69920FFBE5D00D0FA2B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A059A69D20FFBE5E00D0FA2B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A059A69E20FFBE5E00D0FA2B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A059A6A120FFBE5E00D0FA2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A059A6A220FFBE5E00D0FA2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A059A6A420FFBE5E00D0FA2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KX2VYW399T;
+				INFOPLIST_FILE = "Project 23 Space Race/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.felix.Project-23-Space-Race";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		A059A6A520FFBE5E00D0FA2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KX2VYW399T;
+				INFOPLIST_FILE = "Project 23 Space Race/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.felix.Project-23-Space-Race";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A059A68620FFBE5D00D0FA2B /* Build configuration list for PBXProject "Project 23 Space Race" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A059A6A120FFBE5E00D0FA2B /* Debug */,
+				A059A6A220FFBE5E00D0FA2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A059A6A320FFBE5E00D0FA2B /* Build configuration list for PBXNativeTarget "Project 23 Space Race" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A059A6A420FFBE5E00D0FA2B /* Debug */,
+				A059A6A520FFBE5E00D0FA2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A059A68320FFBE5D00D0FA2B /* Project object */;
+}
