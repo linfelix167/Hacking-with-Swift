@@ -12,6 +12,7 @@
 		A0117F142112386900465CE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0117F122112386900465CE2 /* Main.storyboard */; };
 		A0117F162112386A00465CE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0117F152112386A00465CE2 /* Assets.xcassets */; };
 		A0117F192112386A00465CE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0117F172112386A00465CE2 /* LaunchScreen.storyboard */; };
+		A0117F21211239C400465CE2 /* RecordWhistleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0117F20211239C400465CE2 /* RecordWhistleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		A0117F152112386A00465CE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0117F182112386A00465CE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0117F1A2112386A00465CE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0117F20211239C400465CE2 /* RecordWhistleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordWhistleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				A0117F0E2112386900465CE2 /* AppDelegate.swift */,
 				A0117F102112386900465CE2 /* ViewController.swift */,
+				A0117F20211239C400465CE2 /* RecordWhistleViewController.swift */,
 				A0117F122112386900465CE2 /* Main.storyboard */,
 				A0117F152112386A00465CE2 /* Assets.xcassets */,
 				A0117F172112386A00465CE2 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			files = (
 				A0117F112112386900465CE2 /* ViewController.swift in Sources */,
 				A0117F0F2112386900465CE2 /* AppDelegate.swift in Sources */,
+				A0117F21211239C400465CE2 /* RecordWhistleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
