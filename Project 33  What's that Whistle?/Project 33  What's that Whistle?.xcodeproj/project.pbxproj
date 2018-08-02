@@ -13,6 +13,9 @@
 		A0117F162112386A00465CE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0117F152112386A00465CE2 /* Assets.xcassets */; };
 		A0117F192112386A00465CE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0117F172112386A00465CE2 /* LaunchScreen.storyboard */; };
 		A0117F21211239C400465CE2 /* RecordWhistleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0117F20211239C400465CE2 /* RecordWhistleViewController.swift */; };
+		A0117F232112753900465CE2 /* SelectGenreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0117F222112753900465CE2 /* SelectGenreViewController.swift */; };
+		A0117F252112769600465CE2 /* AddCommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0117F242112769600465CE2 /* AddCommentsViewController.swift */; };
+		A0117F272112790B00465CE2 /* SubmitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0117F262112790B00465CE2 /* SubmitViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		A0117F182112386A00465CE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0117F1A2112386A00465CE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0117F20211239C400465CE2 /* RecordWhistleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordWhistleViewController.swift; sourceTree = "<group>"; };
+		A0117F222112753900465CE2 /* SelectGenreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGenreViewController.swift; sourceTree = "<group>"; };
+		A0117F242112769600465CE2 /* AddCommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCommentsViewController.swift; sourceTree = "<group>"; };
+		A0117F262112790B00465CE2 /* SubmitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,9 @@
 				A0117F0E2112386900465CE2 /* AppDelegate.swift */,
 				A0117F102112386900465CE2 /* ViewController.swift */,
 				A0117F20211239C400465CE2 /* RecordWhistleViewController.swift */,
+				A0117F222112753900465CE2 /* SelectGenreViewController.swift */,
+				A0117F242112769600465CE2 /* AddCommentsViewController.swift */,
+				A0117F262112790B00465CE2 /* SubmitViewController.swift */,
 				A0117F122112386900465CE2 /* Main.storyboard */,
 				A0117F152112386A00465CE2 /* Assets.xcassets */,
 				A0117F172112386A00465CE2 /* LaunchScreen.storyboard */,
@@ -139,7 +148,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0117F112112386900465CE2 /* ViewController.swift in Sources */,
+				A0117F252112769600465CE2 /* AddCommentsViewController.swift in Sources */,
 				A0117F0F2112386900465CE2 /* AppDelegate.swift in Sources */,
+				A0117F232112753900465CE2 /* SelectGenreViewController.swift in Sources */,
+				A0117F272112790B00465CE2 /* SubmitViewController.swift in Sources */,
 				A0117F21211239C400465CE2 /* RecordWhistleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
