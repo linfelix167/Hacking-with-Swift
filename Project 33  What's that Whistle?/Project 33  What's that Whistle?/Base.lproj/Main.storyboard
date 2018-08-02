@@ -6,26 +6,9 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project_33__What_s_that_Whistle_" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="DmQ-wW-Vfi"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1076" y="133.5832083958021"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="ise-tz-ldQ">
             <objects>
@@ -37,12 +20,31 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="YGc-QC-Hw8"/>
+                        <segue destination="TLX-hI-LGq" kind="relationship" relationship="rootViewController" id="Rdc-qL-3Fa"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Qb-AW-Kq9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="133.59999999999999" y="-564.46776611694156"/>
+            <point key="canvasLocation" x="105" y="-553"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gfb-JS-Pen">
+            <objects>
+                <tableViewController id="TLX-hI-LGq" customClass="ViewController" customModule="Project_33__What_s_that_Whistle_" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="MIw-ul-OZ2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <connections>
+                            <outlet property="dataSource" destination="TLX-hI-LGq" id="qlx-mp-lcM"/>
+                            <outlet property="delegate" destination="TLX-hI-LGq" id="y64-xY-ghc"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="xtX-wm-ajd"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kgG-71-Xt8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="994" y="-552"/>
         </scene>
     </scenes>
 </document>

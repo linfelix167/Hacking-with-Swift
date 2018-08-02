@@ -17,6 +17,8 @@
 		A0117F252112769600465CE2 /* AddCommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0117F242112769600465CE2 /* AddCommentsViewController.swift */; };
 		A0117F272112790B00465CE2 /* SubmitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0117F262112790B00465CE2 /* SubmitViewController.swift */; };
 		A0A810E42112980200CDAE19 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A810E32112980200CDAE19 /* CloudKit.framework */; };
+		A0D7716021135C2C0022C40F /* Whistle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D7715F21135C2C0022C40F /* Whistle.swift */; };
+		A0D77162211364C10022C40F /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D77161211364C10022C40F /* ResultsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		A0117F262112790B00465CE2 /* SubmitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitViewController.swift; sourceTree = "<group>"; };
 		A0A810E12112980000CDAE19 /* Project 33  What's that Whistle?.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Project 33  What's that Whistle?.entitlements"; sourceTree = "<group>"; };
 		A0A810E32112980200CDAE19 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		A0D7715F21135C2C0022C40F /* Whistle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Whistle.swift; sourceTree = "<group>"; };
+		A0D77161211364C10022C40F /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,13 +71,10 @@
 		A0117F0D2112386900465CE2 /* Project 33  What's that Whistle? */ = {
 			isa = PBXGroup;
 			children = (
+				A0D7715E21135C190022C40F /* Model */,
+				A0D7715D21135C060022C40F /* Controller */,
 				A0A810E12112980000CDAE19 /* Project 33  What's that Whistle?.entitlements */,
 				A0117F0E2112386900465CE2 /* AppDelegate.swift */,
-				A0117F102112386900465CE2 /* ViewController.swift */,
-				A0117F20211239C400465CE2 /* RecordWhistleViewController.swift */,
-				A0117F222112753900465CE2 /* SelectGenreViewController.swift */,
-				A0117F242112769600465CE2 /* AddCommentsViewController.swift */,
-				A0117F262112790B00465CE2 /* SubmitViewController.swift */,
 				A0117F122112386900465CE2 /* Main.storyboard */,
 				A0117F152112386A00465CE2 /* Assets.xcassets */,
 				A0117F172112386A00465CE2 /* LaunchScreen.storyboard */,
@@ -88,6 +89,27 @@
 				A0A810E32112980200CDAE19 /* CloudKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A0D7715D21135C060022C40F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A0117F102112386900465CE2 /* ViewController.swift */,
+				A0117F20211239C400465CE2 /* RecordWhistleViewController.swift */,
+				A0117F222112753900465CE2 /* SelectGenreViewController.swift */,
+				A0117F242112769600465CE2 /* AddCommentsViewController.swift */,
+				A0117F262112790B00465CE2 /* SubmitViewController.swift */,
+				A0D77161211364C10022C40F /* ResultsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A0D7715E21135C190022C40F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A0D7715F21135C2C0022C40F /* Whistle.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,8 +196,10 @@
 				A0117F252112769600465CE2 /* AddCommentsViewController.swift in Sources */,
 				A0117F0F2112386900465CE2 /* AppDelegate.swift in Sources */,
 				A0117F232112753900465CE2 /* SelectGenreViewController.swift in Sources */,
+				A0D7716021135C2C0022C40F /* Whistle.swift in Sources */,
 				A0117F272112790B00465CE2 /* SubmitViewController.swift in Sources */,
 				A0117F21211239C400465CE2 /* RecordWhistleViewController.swift in Sources */,
+				A0D77162211364C10022C40F /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
