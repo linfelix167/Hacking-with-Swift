@@ -5,7 +5,6 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.1"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,10 +12,14 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project_37__Psychic_Tester" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mMk-bq-s4J" customClass="GradientView" customModule="Project_37__Psychic_Tester" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                             <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EdS-fR-rqE">
                                 <rect key="frame" x="93" y="27" width="481" height="321"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -24,19 +27,24 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="mMk-bq-s4J" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0jE-td-Io1"/>
+                            <constraint firstItem="mMk-bq-s4J" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="3cR-Dl-Vtp"/>
+                            <constraint firstAttribute="bottom" secondItem="mMk-bq-s4J" secondAttribute="bottom" id="5iU-Fy-8gU"/>
+                            <constraint firstAttribute="trailing" secondItem="mMk-bq-s4J" secondAttribute="trailing" id="BHF-DB-Ei3"/>
                             <constraint firstItem="EdS-fR-rqE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eNU-HD-TwF"/>
                             <constraint firstItem="EdS-fR-rqE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uRg-GN-og5"/>
-                            <constraint firstItem="EdS-fR-rqE" firstAttribute="leading" secondItem="Uee-0j-aNJ" secondAttribute="leading" constant="93" id="wB0-le-BZl"/>
-                            <constraint firstItem="EdS-fR-rqE" firstAttribute="top" secondItem="Uee-0j-aNJ" secondAttribute="top" constant="27" id="xwW-dd-rl5"/>
+                            <constraint firstItem="EdS-fR-rqE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="93" id="wB0-le-BZl"/>
+                            <constraint firstItem="EdS-fR-rqE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="27" id="xwW-dd-rl5"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Uee-0j-aNJ"/>
                     </view>
                     <connections>
                         <outlet property="cardContainer" destination="EdS-fR-rqE" id="RTT-Ti-ZIV"/>
+                        <outlet property="gradientView" destination="mMk-bq-s4J" id="pez-zY-Ml5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="138.98050974512745" y="117.59999999999999"/>
         </scene>
     </scenes>
 </document>
