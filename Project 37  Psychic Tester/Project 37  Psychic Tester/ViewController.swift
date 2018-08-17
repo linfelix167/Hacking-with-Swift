@@ -8,10 +8,12 @@
 
 import UIKit
 import GameplayKit
+import AVFoundation
 
 class ViewController: UIViewController {
   
   var allCards = [CardViewController]()
+  var music: AVAudioPlayer!
 
   @IBOutlet weak var cardContainer: UIView!
   @IBOutlet weak var gradientView: GradientView!
@@ -27,6 +29,8 @@ class ViewController: UIViewController {
     UIView.animate(withDuration: 20, delay: 0, options: [.allowUserInteraction, .autoreverse, .repeat], animations: {
       self.view.backgroundColor = .blue
     })
+    
+    playMusic()
   }
 
   @objc func loadCards() {
@@ -124,6 +128,16 @@ class ViewController: UIViewController {
     cell.contents = UIImage(named: "particle")?.cgImage
     particleEmitter.emitterCells = [cell]
 
+  }
+  
+  func playMusic() {
+    if let musicURL = Bundle.main.url(forResource: "PhantomFromSpace", withExtension: "mp3") {
+      if let audioPlayer = try? AVAudioPlayer(contentsOf: musicURL) {
+        music = audioPlayer
+        music.numberOfLoops = -1
+        music.play()
+      }
+    }
   }
 }
 
