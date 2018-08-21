@@ -9,11 +9,13 @@
 import UIKit
 import GameplayKit
 import AVFoundation
+import WatchConnectivity
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, WCSessionDelegate {
   
   var allCards = [CardViewController]()
   var music: AVAudioPlayer!
+  var lastMessage: CFAbsoluteTime = 0
 
   @IBOutlet weak var cardContainer: UIView!
   @IBOutlet weak var gradientView: GradientView!
@@ -31,6 +33,21 @@ class ViewController: UIViewController {
     })
     
     playMusic()
+    
+    if (WCSession.isSupported()) {
+      let session = WCSession.default
+      session.delegate = self
+      session.activate()
+    }
+  }
+  
+  override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
+    
+    let instructions = "Please ensure your Apple Watch is configured correctly. On your iPhone, launch Apple's 'Watch' configuration app then choose General > Wake Screen. On that screen, please disable Wake Screen On Wrist Raise, then select Wake For 70 Seconds. On your Apple Watch, please swipe up on your watch face and enable Silent Mode. You're done!"
+    let ac = UIAlertController(title: "Adjust your settings", message: instructions, preferredStyle: .alert)
+    ac.addAction(UIAlertAction(title: "I'm Ready", style: .default))
+    present(ac, animated: true)
   }
 
   @objc func loadCards() {
@@ -138,6 +155,59 @@ class ViewController: UIViewController {
         music.play()
       }
     }
+  }
+  
+  override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+    super.touchesMoved(touches, with: event)
+    
+    guard let touch = touches.first else { return }
+    
+    let location = touch.location(in: cardContainer)
+    
+    for card in allCards {
+      if card.view.frame.contains(location) {
+        if view.traitCollection.forceTouchCapability == .available {
+          if touch.force == touch.maximumPossibleForce {
+            card.front.image = UIImage(named: "cardStar")
+            card.isCorrect = true
+          }
+        }
+        if card.isCorrect {
+          sendWatchMessage()
+        }
+      }
+    }
+  }
+  
+  func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+    
+  }
+  
+  func sessionDidBecomeInactive(_ session: WCSession) {
+    
+  }
+  
+  func sessionDidDeactivate(_ session: WCSession) {
+    
+  }
+  
+  func sendWatchMessage() {
+    let currentTime = CFAbsoluteTimeGetCurrent()
+    
+    // if less then half a second has passed, bail out
+    if lastMessage + 0.5 > currentTime {
+      return
+    }
+    
+    // send a message to the watch if it's reachable
+    if (WCSession.default.isReachable) {
+      // this is a meaningless message, but it's enough for our purposes
+      let message = ["Message": "Hello"]
+      WCSession.default.sendMessage(message, replyHandler: nil)
+    }
+    
+    // update our rate limiting property
+    lastMessage = CFAbsoluteTimeGetCurrent()
   }
 }
 
