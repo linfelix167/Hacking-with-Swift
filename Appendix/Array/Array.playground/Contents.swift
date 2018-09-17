@@ -45,3 +45,34 @@ for (index, item) in array.enumerated() {
     print("Found \(item) at position \(index)")
 }
 
+/* Find an item in an array using index(of:) */
+if let index = array.index(of: "Peaches") {
+    print("Found peaches at index \(index)")
+}
+
+/* Join an array of strings into a single string */
+let joined = array.joined(separator: ", ")
+
+/* Loop through an array in reverse */
+for item in array.reversed() {
+    print("Found \(item)")
+}
+
+for (index, item) in array.reversed().enumerated() {
+    print("Found \(item) at position \(index)")
+}
+
+/* Loop through items in an array */
+for item in array {
+    print("Found \(item)")
+}
+
+/* Shuffle an array in iOS 8 and below */
+extension Array {
+    mutating func shuffle() {
+        for i in 0 ..< (count - 1) {
+            let j = Int(arc4random_uniform(UInt32(count - i))) + i
+            swapAt(i, j)
+        }
+    }
+}
